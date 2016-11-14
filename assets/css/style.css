@@ -1,7 +1,7 @@
 body {
 	margin-top: 25px;
 	background-image: url("../images/bg.jpg");
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-attachment: fixed;
 }
 
@@ -20,7 +20,7 @@ body {
 
 ul.menu {
 	margin-top: 32px;
-	margin-right: 32%;
+	margin-right: 30%;
 	margin-bottom: 3px;
 	margin-left: inherit;
 	padding-top: 7px;
@@ -110,7 +110,7 @@ li.mitem a:hover {
 }
 
 hr.hrabout {
-	border-top: 2px solid black/*rgb(163, 214, 167)*/;
+	border-top: 2px solid rgb(0,0,0)/*rgb(163, 214, 167)*/;
 	width: auto;
 }
 
@@ -120,7 +120,7 @@ hr.hrabout {
 	margin-bottom: 10px;
 	height: 257px;
 	width: 193px;
-	border: 2px solid black;
+	border: 2px solid rgb(0,0,0);
 }
 
 .aboutme p {
@@ -134,9 +134,13 @@ hr.hrabout {
 .box {
 	width: 400px;
 	height: 225px;
-	margin: 5px;
-	border-style: solid;
-	border-width: 2px;
+	margin: 3px;
+	/*border-style: solid;
+	border-width: 2px;*/
+}
+
+.box:hover {
+	opacity: 0.65;
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
@@ -152,13 +156,63 @@ hr.hrabout {
 }
 
 .contactform {
-	width: 33%;
+	width: 50%;
+}
+
+.contactform label {
+	font-family: arial;
+}
+
+input[id=name], input[id=email], textarea[id=message] {
+    width: 100%;
+    margin: 8px 0px 14px 0px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    /*-webkit-transition: 0.5s;*/
+    transition: 0.5s;
+    outline: none;
+    font-family: arial;
+}
+
+input[id=name], input[id=email] {
+	padding: 12px 20px;
+}
+
+textarea[id=message] {
+	padding: 20px 20px;
+	height: 200px;
+	box-sizing: border-box;
+	resize: none;
+}
+
+input[id=name]:focus, input[id=email]:focus, textarea[id=message]:focus  {
+    border: 2px solid rgb(0,0,0);
+ }
+
+input[type=submit] {
+	font-family: arial;
+	color: rgb(0,0,0);
+	background-color: rgb(255,255,255);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(0,0,0);
+	width: 67.63636px;
+    height: 36.636359999999996px;
+	padding: 4px 2px 2px 2px;
+}
+
+input[type=submit]:hover {
+	color: rgb(207,91,66);
 }
 
 .connect {
+	/*position: absolute;
+	right: 7px;
+	top: 161px;*/
 	float: right;
 	margin-top: 30px;
 	margin-right: 6%;
+	margin-bottom: 10px;
 	height: 200px;
 	width: 200px;
 	background: rgba(125,148,154,.9);
@@ -191,7 +245,7 @@ hr.hrconnect {
 
 .footer {
 	clear: both;
-	margin: 0 auto;
+	margin: 10px auto;
 	width: 90%;
 	height: 30px;
 	background: rgba(125,148,154,.8);
@@ -210,4 +264,5 @@ hr.hrconnect {
 	position: fixed;
 	left: 1380px;
 	top: 338px;
+	z-index: 1;
 }
