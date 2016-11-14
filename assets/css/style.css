@@ -109,8 +109,8 @@ li.mitem a:hover {
 	width: 51%;
 }
 
-hr.hrabout {
-	border-top: 2px solid rgb(0,0,0)/*rgb(163, 214, 167)*/;
+.main hr {
+	border: 1px solid rgb(0,0,0)/*rgb(163, 214, 167)*/;
 	width: auto;
 }
 
@@ -227,9 +227,10 @@ input[type=submit]:hover {
 	text-align: center;
 }
 
-hr.hrconnect {
-	border-top: 2px solid black/*rgb(163, 214, 167)*/;
-	margin-top: -10px;
+.connect hr {
+	border: 1px solid black/*rgb(163, 214, 167)*/;
+	margin-top: -14px;
+	margin-bottom: 13px;
 	width: 150px;
 }
 
