@@ -135,16 +135,29 @@ li.mitem a:hover {
 	width: 400px;
 	height: 225px;
 	margin: 3px;
-	/*border-style: solid;
-	border-width: 2px;*/
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
 }
 
 .box:hover {
-	opacity: 0.65;
+	background-color: rgba(228,144,84, 1);
+}
+
+.box:hover img {
+	opacity: 0.5;
+}
+
+.box:hover .label1 {
+	z-index: 0;
 }
 
 .box1, .box2, .box3, .box4, .box5, .box6 {
 	float:left;
+}
+
+.box1 a, .box2 a, .box3 a, .box4 a, .box5 a, .box6 a {
+	text-decoration: none;
+	color: rgb(0,0,0);
 }
 
 .box1 {
@@ -153,6 +166,133 @@ li.mitem a:hover {
 
 .box4 {
 	clear: left;
+}
+
+/*label and hover effect for gallery items*/
+/*label1*/
+.box:hover .label1 {
+	z-index: 0;
+}
+.label1 {
+	width: 400px;
+	height: 80px;
+	position: relative;
+	top: -147px;
+	left: 0px;
+	background-color: rgba(255,255,255,.85);
+	font-family: arial;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 2px;
+	z-index: -1;
+}
+.label1 p {
+	line-height: 80px;
+}
+
+/*label2*/
+.box:hover .label2 {
+	z-index: 0;
+}
+.label2 {
+	width: 400px;
+	height: 80px;
+	position: relative;
+	top: -147px;
+	left: 0px;
+	background-color: rgba(255,255,255,.85);
+	font-family: arial;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 2px;
+	z-index: -1;
+}
+.label2 p {
+	line-height: 80px;
+}
+
+/*label3*/
+.box:hover .label3 {
+	z-index: 0;
+}
+.label3 {
+	width: 400px;
+	height: 80px;
+	position: relative;
+	top: -147px;
+	left: 0px;
+	background-color: rgba(255,255,255,.85);
+	font-family: arial;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 2px;
+	z-index: -1;
+}
+.label3 p {
+	line-height: 80px;
+}
+
+/*label4*/
+.box:hover .label4 {
+	z-index: 0;
+}
+.label4 {
+	width: 400px;
+	height: 80px;
+	position: relative;
+	top: -147px;
+	left: 0px;
+	background-color: rgba(255,255,255,.85);
+	font-family: arial;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 2px;
+	z-index: -1;
+}
+.label4 p {
+	line-height: 80px;
+}
+
+/*label5*/
+.box:hover .label5 {
+	z-index: 0;
+}
+.label5 {
+	width: 400px;
+	height: 80px;
+	position: relative;
+	top: -147px;
+	left: 0px;
+	background-color: rgba(255,255,255,.85);
+	font-family: arial;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 2px;
+	z-index: -1;
+}
+.label5 p {
+	line-height: 80px;
+}
+
+/*label6*/
+.box:hover .label6 {
+	z-index: 0;
+}
+.label6 {
+	width: 400px;
+	height: 80px;
+	position: relative;
+	top: -147px;
+	left: 0px;
+	background-color: rgba(255,255,255,.85);
+	font-family: arial;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 2px;
+	z-index: -1;
+}
+.label6 p {
+	line-height: 80px;
 }
 
 .contactform {
